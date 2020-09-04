@@ -5,6 +5,9 @@
 add welcome message and table of contents here????
 
 #### References
+- https://www.markdownguide.org/basic-syntax/#headings
+
+
 - https://www.tutorialspoint.com/haskell/haskell_decision_making.htm
 - https://wiki.haskell.org/Learn_Haskell_in_10_minutes
 - https://wiki.haskell.org/How_to_work_on_lists
