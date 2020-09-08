@@ -1,4 +1,4 @@
-# Exercises
+# Lecture Exercises Set #1
 
 #### 1. Calculate the length of a list
 `len [] = 0`  
