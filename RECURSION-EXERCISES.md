@@ -1,4 +1,4 @@
-# Lecture Exercises Set #1
+# LISTS, RECURSION, and FUNCTIONS
 
 #### 1. Calculate the length of a list
 `len [] = 0`  

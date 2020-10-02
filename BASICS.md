@@ -227,8 +227,4 @@ Note: if you want to add negative numbers you need to surround a negative number
 
 The output would be False.  
 
-#### .. Built-In Math Functions...for fun?
-Just for future reference, I wrote down some built-in math functions below. You can skip this tbh.
-
-`piVal = pi`
 

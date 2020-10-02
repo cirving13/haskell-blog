@@ -1,9 +1,10 @@
-### Installing Haskell
-- will add later
+### Installing Haskell -- FOR MAC 
+- `curl -sSL https://get.haskellstack.org/ | sh`
+- `stack exec ghci`
 
 ### Running Haskell on your terminal
 - Type `ghci` on your terminal 
-- To quite, just type `:quit` 
+- To quit, just type `:quit` 
 
 ### Using Haskell in an editor 
 - .hs files
