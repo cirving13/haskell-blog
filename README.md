@@ -1,4 +1,4 @@
-## Welcome to my Haskell Tutorial blog????
+## Welcome to my Haskell Tutorial blog
 
 #### Edit..
 
