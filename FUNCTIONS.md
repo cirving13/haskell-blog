@@ -46,5 +46,20 @@ tripleList = multList 3
 doubleList = multList 2
 ```
 
+So clearly the advantage of higher-order functions is concise code and less error prone defintions.
+
 ### Anonymous Functions
+
+An anonymous function is function without a name, and a lambda abstraction. These functions essentially increment its parameters...for example in GHCI...
+
+```
+Prompt> (\x -> x + 1) 4
+5 :: Integer
+```
+
+Another example is ...
+```
+Prompt> (\x y -> x + y) 3 5
+8 :: Integer
+```
 
