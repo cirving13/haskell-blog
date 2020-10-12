@@ -2,7 +2,7 @@
 
 ### Quicksort
 
-So before we implement the Quicksort algorithm in Haskell, let's review on what the algorithm itself is. Quicksort is esssneeitally a divide-and-conquer algorithm, which selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.  
+So before we implement the Quicksort algorithm in Haskell, let's review on what the algorithm itself is. Quicksort is essentially a divide-and-conquer algorithm, which selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.  
 
 For a clearer undestanding look at this link: https://www.geeksforgeeks.org/quick-sort/
 
@@ -19,7 +19,7 @@ quicksort1 (x:xs) =
 
 then in ghci you run the function like this: `quicksort1 [1,5,2]`
 
-So the code above we are taking the first element as our pivot, divide the remaining list into the elements greater than the pivot and less than the pivot. Then we recursively sort each of these sub-list, and combine them with the pivot in the middle. The pitfall with this version of wuicksort is in each new list we make takes extra memory. Meaning that we copy part of the list at each recursive step, or in other words, we will use at least O(n) memory. By the way, it's important to know that this version uses the first elementas the pivot. 
+So the code above we are taking the first element as our pivot, divide the remaining list into the elements greater than the pivot and less than the pivot. Then we recursively sort each of these sub-list, and combine them with the pivot in the middle. The pitfall with this version of quicksort is in each new list we make takes extra memory. Meaning that we copy part of the list at each recursive step, or in other words, we will use at least O(n) memory. By the way, it's important to know that this version uses the first elementas the pivot. 
 
 
 ### Mergesort 
@@ -88,6 +88,20 @@ bubblesort xs = bubblesort' xs 0
 
 In the implementation above, bubblesort'iter will go through all the elements in a list and exchange pairs of elements. Then in the bubblesort function it will apply the bubblesort'iter n time -- where n is the length of the list that should be sorted. So in the bubblesort function we take into two arguments: the current list and the number of the current iteration i. 
 
+
+### Selection Sort
+
+--include an in-depth explanation
+
+```
+selSort :: (Ord a) => [a] -> [a]
+selSort [] = []
+selSort xs = let x = maximum xs in selSort (remove x xs) ++ [x] 
+  where remove _ [] = []
+        remove a (x:xs)
+          | x == a = xs
+          | otherwise = x : remove a xs
+```
 ----------------------------------------------------
 ##### References
 
