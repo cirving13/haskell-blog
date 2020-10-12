@@ -20,3 +20,10 @@ numUniques = length . nub
 ```
 
 When you import a module, its exports become available in the global namespace, meaning that you can call them from wherever. `nub`, in the example below, is a function defined in Data.List that takes a list and weeds out duplicate elements. 
+
+
+
+-------------------------
+
+References:
+http://learnyouahaskell.com/modules#loading-modules
