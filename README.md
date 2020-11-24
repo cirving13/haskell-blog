@@ -1,8 +1,23 @@
 ## Welcome to my Haskell Tutorial blog
 
-#### Edit..
-
-add welcome message and table of contents here????
+#### Table of Contents
+- Introductions 
+    - [Setup](https://github.com/gabbypinto/haskell-blog/blob/master/INTRO/SETUP.md)
+    - [Basics](https://github.com/gabbypinto/haskell-blog/blob/master/INTRO/BASICS.md) 
+    - [Modules](https://github.com/gabbypinto/haskell-blog/blob/master/INTRO/MODULES.md)
+    -  [Recursion](https://github.com/gabbypinto/haskell-blog/blob/master/INTRO/RECURSION.md)
+    - [Recursion Exercises](https://github.com/gabbypinto/haskell-blog/blob/master/INTRO/RECURSION-EXERCISES.md)
+- Functions
+    - [Functions](https://github.com/gabbypinto/haskell-blog/blob/master/FUNCTIONS/FUNCTIONS.md)
+    - [Lambda Functions](https://github.com/gabbypinto/haskell-blog/blob/master/FUNCTIONS/LAMBDA.md)
+    - [Folding](https://github.com/gabbypinto/haskell-blog/blob/master/FUNCTIONS/FOLDING.md)
+- Data Structures
+    - [Lists](https://github.com/gabbypinto/haskell-blog/blob/master/DATA-STRUCTURES/LISTS.md)
+    - [Lists Part 2](https://github.com/gabbypinto/haskell-blog/blob/master/DATA-STRUCTURES/MORELISTS.md)
+    - [Queue](https://github.com/gabbypinto/haskell-blog/blob/master/DATA-STRUCTURES/QUEUE.md)
+    - [Linked List](https://github.com/gabbypinto/haskell-blog/blob/master/DATA-STRUCTURES/LINKEDLIST.md)
+- Algorithms
+    - [Sorting](https://github.com/gabbypinto/haskell-blog/blob/master/ALGORITHMS/SORTING.md)
 
 #### References
 - https://www.markdownguide.org/basic-syntax/#headings
