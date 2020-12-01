@@ -21,4 +21,5 @@ foldl (\acc elem -> <term>) <start_acc> <list>
 
 #### Folding Exercises 
 
+- Exercise # 1
 
