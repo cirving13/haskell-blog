@@ -43,6 +43,7 @@ Hello Hagi
 
 Let's do another example
 
+```
 main :: IO()
 main = do 
     i <- getLine
@@ -51,3 +52,4 @@ main = do
         main
     else
         return ()
+```
