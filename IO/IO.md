@@ -51,5 +51,20 @@ main = do
         putStrLn ("Input: "++i)
         main
     else
+        return ()  --when the user enter quit, exits the program.
+```
+
+Here we can recursively do the IO function and gives us the option to quit. 
+
+
+It is also possible to have arguments as you can see the example below
+
+```
+count :: Int -> Int -> IO ()
+count n m = do 
+    putStrLn (show n)
+    if n < m then 
+        count (n+1) m
+    else
         return ()
 ```
