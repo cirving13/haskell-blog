@@ -40,3 +40,32 @@ calc (Div x y) = div x y
 ```
 In the datatype Calculator, it include the type of functions that we can perform: add, subtract, multiple and divide. Also of which, by the way, take intergers. 
 
+#### Differences between data, type and newtype
+Type is an allias for types. Let's look at this example 
+
+```
+data Color = RBG(Int, Int, Int)
+type Palette = [Color]
+```
+
+Here the data is Color, and type is Palette-- so alias means that in type checking type and data are the same. 
+
+We could even change the example above to this...
+
+```
+type Color = (Int, Int, Int)
+type Palette = [Color]
+```
+
+So now what is a newtype?
+
+It's like data with only one constructor and only one field!
+
+Let's look at an example:
+```
+newtype Name = Name String
+```
+Why is this helpful? Why not using data?
+
+Because its constructor clearly signifies a new type! But, data can do the same? The new type and the type of the field are in direct corrospondence (isomorphic). And, new type is checked at compile time, yet ignored at runtime; thus, no work done when pattern matching)! 
+

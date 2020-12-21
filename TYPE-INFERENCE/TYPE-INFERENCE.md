@@ -56,6 +56,75 @@ x :: a
 y :: b
 z :: c
 ```
+Here we have a function add, that contaiins three arguments: x,y,z. Where the sum of x and y are prepended to z. 
+But can we not infer that z has to be list? Yes, but if we do we can get type define errors.
+
+
+```
+add x y z = (x+y) : z
+x :: a
+y :: b          (+) :: (Num d) => d -> d -> d
+z :: c          (:) :: e-> [e] -> [e]
+
+from (x+y) derive a = d and b = d
+from (x+y) : z derive [e] = c and d = e
+```
+
+For the functions `(+)` and `(-)`, those are defined above as type signatures. We have a unique type variables d and e. 
+
+Let's look at the first x+y, the plus operator's first argument is d and d. Here we specify that a is d and b is d. 
+In the second one, it specifies that d must be an element within the list (e) and c must be a list that must contains elements of e. 
+
+
+```
+add x y z = (x+y) : z
+x :: a
+y :: b          (+) :: (Num d) => d -> d -> d
+z :: c          (:) :: e-> [e] -> [e]
+
+from (x+y) derive a = d and b = d
+from (x+y) : z derive [e] = c and d = e
+
+x::d y::d z::[e] z::[d]
+```
+Now that there are not other subexpressions to look at. The question is how do we get at the result. The last line is the last piece of the puzzle--establishing the rules. Here's the full and complete example...
+
+
+```
+add :: (Num d) => d -> d -> [d] -> [d]
+add x y z = (x+y) : z
+
+(+) :: (Num d) => d -> d -> d
+(:) :: e-> [e] -> [e]
+
+x::d y::d z::[e] z::[d]
+```
+
+Now let's try to use typeinference in partial function application!
+
+```
+f = reverse. sort
+
+reverse :: [a] -> [a]
+(.) :: (c->d) -> (b->c) -> b -> d
+sort :: Ord e => [e] -> [e]
+```
+Since we don't have any variables, we don't hav eany variables that we can assign a type to, we can skip the first stage ( assign every variable a unique typevariable). So now we cacn derive rules for the last three lines (referring to the example above) .
+
+```
+f = reverse. sort
+
+reverse :: [a] -> [a]
+(.) :: (c->d) -> (b->c) -> b -> d
+sort :: Ord e => [e] -> [e]
+
+
+-- rules...
+from reverse . sort derive 
+b = [e], c = [e], c = [a], d = [a], a = e
+```
+We can imply that a must equal to e, so we know that Ord a =. [a] -> [a]. So with the rule a = e, we can rewrite a so that it's equal to a list of e's.
+
 ===============
 ### References 
 - https://www.cs.cornell.edu/courses/cs3110/2016fa/l/17-inference/lec.pdf
