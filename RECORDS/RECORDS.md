@@ -1,4 +1,4 @@
-### Records
+# Records
 
 We have seen datatype definitions such as this one..
 ```
@@ -15,3 +15,8 @@ Which automatically generates `name::Person -> String` and `age::Person->Int`
 However, there are two different sets of issues:
 - the narrow issue: namespacing for record field names. Currently in Haskell two records in the same module can't share a field name. 
 - the broad issue: first class record types. In Haskell there is no "record type" per se. Rather, you can simply give names to the fields of a constructor. Records are not extensible andd there is no polymorphism on records
+
+
+### References and Recommendations for Future Reading:
+- [Records - Youtube](https://www.youtube.com/watch?v=CoNZRKqQi1o&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=12)
+= [Records](https://gitlab.haskell.org/ghc/ghc/-/wikis/records)

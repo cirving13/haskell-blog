@@ -88,8 +88,8 @@ z = 3.1415
 
 I've provided some more data types below...  
 
-- Int: Intergers that are bounded 
-- Integer: Intergers that are not bounded
+- Int: Integers that are bounded 
+- Integer: Integers that are not bounded
 - Float: A decimal that is only up to the tenths place (i.e. 0.1)
 - Double: A decimal that goes up the 14 places after the decimal point.
 - Bool: A boolean that results in True or False
