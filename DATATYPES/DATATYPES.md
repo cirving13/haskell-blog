@@ -4,7 +4,7 @@
 
 data Name = Constructor 1 <args> | Constructor <argv> | ...
 
-So in Haskell we have the chance to create our own datatypes, which are similar to creating a struct in C. For get a better grasp of this idea, here are some examples....
+So in Haskell we have the chance to create our own datatypes, which are similar to creating a struct in C. For get a better grasp of this idea, here are some examples...
 
 #### Example 1
 ```
@@ -69,3 +69,7 @@ Why is this helpful? Why not using data?
 
 Because its constructor clearly signifies a newtype! But, data can do the same? The newtype and the type of the field are in direct corrospondence (isomorphic). And, newtype is checked at compile time, yet ignored at runtime; thus, no work done when pattern matching)! 
 
+### References and Recommendations for Future Reading:
+- [Datatypes - Youtube](https://www.youtube.com/watch?v=7sbxVALuuxA&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=10)
+- [data, newtype, type - Youtube](https://www.youtube.com/watch?v=oAiwUAgWKwk&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=21)
+- [More on datatypes - Haskell Docs](https://en.wikibooks.org/wiki/Haskell/More_on_datatypes)

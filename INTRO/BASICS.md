@@ -32,7 +32,7 @@
 
     sum = foldr (+) 0
     ```  
-    In the declarative approach, we define what it means to have a sum. In the first line we explaining the a sum with an empty list has a sum of 0. Futhermore, the second line adds that a sum with a least one element 'x' plus the rest of the sum of that is. 
+    In the declarative approach, we define what it means to have a sum (sum [] = 0, where the sum of an empty list is 0). Then, in the second line, we say a list with at least one element (x) is plus whatever the rest of the sum is. 
 
 ### Lazy vs. Strict  
 
@@ -63,7 +63,7 @@ int func(int arg){
 }
 ```
 
-Lazy algorithms do not evaluated in the order they are written. They only evaluate the necessary. Meanwhile, strict evaluates everything. 
+When a compiler encounters an expression, usually it tries to evaluate it. The style of only evaluating what's needed is called lazy evaluation , while the opposite (evaluating immediately) is called strict evaluation. If you wanna see what that looks like in code, look at the examples above. 
 
 ### Types  
 Every value in Haskell has a type, and that type is strict.  
