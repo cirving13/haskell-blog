@@ -1,10 +1,10 @@
-# RECUSION
+# Recursion
 
 ### Recusion
 So...there are no loops, but we can 'loop' through recursion. 
 
-*you need a refresher on recusion check out the link below*
-https://www.geeksforgeeks.org/recursion/
+you need a refresher on recusion check out this [link](https://www.geeksforgeeks.org/recursion/)
+
 
 Here's an example of recursion in Haskell...
 ``` 
@@ -32,18 +32,17 @@ Looks familiar right? Well this is essentially the same as our fac function from
 
 ### Accumulators
 
-Accumulators are functions take a number n, and returns a function that takes another number i and returns a functions that takes another number i and return n incremented by i. This is basically another way of implementing a recursive functioin. 
-
+Another way of implementing recursive functions is with accumulators. In an acccumulator, you can accumulate some result, which is done in the example below. 
 ```
 fac n = aux n 1 
     where 
       aux n acc 
-        | n <= 1 = acc  --returns a constant value
-        | otherwise = acc (n-1) (n*acc)  --direct recursive call, this is a tail recursive function; which won't call a stack overflow
+        | n <= 1 = acc  --if n<=1 then we return our acc
+        | otherwise = acc (n-1) (n*acc)  --we update n (we decrement n by one) and multiply the acc by n.
 
 ```
 
-The same thing in Java...
+The same thing in Java (using imperative programming)...
 
 ```
 fac n;
@@ -58,3 +57,10 @@ while(True){
     }
 }
 ```
+In this case, the "recursion" is done with a while loop, and if n<= 1 we can return the accumulator. If n is not <= 1, we update our n value and our acc value. 
+
+### Try out some exercises in RECURSIONS-EXERCISES
+
+### References and Recommendations for Future Readings:
+- [Functions, Accumulators, Guards - Youtube](https://www.youtube.com/watch?v=y6xiaSkVlvs&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=3)
+- [Accumulators - Haskell Docs](https://wiki.haskell.org/Performance/Accumulating_parameter)
