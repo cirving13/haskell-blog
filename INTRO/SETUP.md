@@ -1,3 +1,5 @@
+# Setup
+
 ### Installing Haskell -- FOR MAC 
 - `curl -sSL https://get.haskellstack.org/ | sh`
 - `stack exec ghci`
@@ -8,3 +10,7 @@
 
 ### Using Haskell in an editor 
 - .hs files
+
+
+### References:
+- [Haskell Documentation](https://www.haskell.org/platform/)

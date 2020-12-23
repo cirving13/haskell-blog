@@ -57,6 +57,6 @@ fromMaybe 3.1415 (Just 2.7183)
 ```
 We could write our own conversion function, but we could use fromMaybe to perform the conversion. The example above performs that conversion, where if we get a Nothing, we get the default value back. And, if we use Just then we get the Just value back (2.7183).
 
-### References and Recommendations Future Reading:
+### References and Recommendations for Future Reading:
 - [Haskell Documentation](https://wiki.haskell.org/Maybe)
 - [Youtube](https://www.youtube.com/watch?v=O0iohEXMCsU&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=14)

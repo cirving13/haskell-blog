@@ -9,7 +9,7 @@
     - Declarative
     - Easier to verify, because we can mathematically prove the correctness of our algorithms
 
-- Declarative vs. Imperative  
+#### Declarative (aka Functional) vs. Imperative  -- shown in code
 
     *Imperative*
     ``` 
@@ -34,7 +34,7 @@
     ```  
     In the declarative approach, we define what it means to have a sum. In the first line we explaining the a sum with an empty list has a sum of 0. Futhermore, the second line adds that a sum with a least one element 'x' plus the rest of the sum of that is. 
 
-- Lazy vs. Strict  
+### Lazy vs. Strict  
 
 Lazy  
 
@@ -223,8 +223,9 @@ Note: if you want to add negative numbers you need to surround a negative number
 
 `notTrue = not(True)`  
   
-
-
 The output would be False.  
 
 
+### References:
+- [Quick Intro to Haskell](https://wiki.haskell.org/Learn_Haskell_in_10_minutes)
+- [Youtube - Imperative v. Declarative](https://www.youtube.com/watch?v=Vgu82wiiZ90&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=1)

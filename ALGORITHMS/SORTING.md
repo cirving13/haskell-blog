@@ -1,10 +1,10 @@
-# SORTING
+# Sorting
 
 ### Quicksort
 
 So before we implement the Quicksort algorithm in Haskell, let's review on what the algorithm itself is. Quicksort is essentially a divide-and-conquer algorithm, which selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.  
 
-For a clearer undestanding look at this link: https://www.geeksforgeeks.org/quick-sort/
+For a clearer undestanding click here: [Quicksort](https://www.geeksforgeeks.org/quick-sort/)
 
 
 ```
@@ -91,19 +91,17 @@ In the implementation above, bubblesort'iter will go through all the elements in
 
 ### Selection Sort
 
---include an in-depth explanation
+The implementation of selection sort below selects the minimum element repeatedly until the list is empty. 
 
 ```
-selSort :: (Ord a) => [a] -> [a]
-selSort [] = []
-selSort xs = let x = maximum xs in selSort (remove x xs) ++ [x] 
-  where remove _ [] = []
-        remove a (x:xs)
-          | x == a = xs
-          | otherwise = x : remove a xs
-```
-----------------------------------------------------
-##### References
+import Data.List (minimum, delete)
 
-1. https://mmhaskell.com/blog/2019/5/13/quicksort-with-haskell
-2. https://smthngsmwhr.wordpress.com/2012/11/09/sorting-algorithms-in-haskell/#quicksort
+ssort :: Ord t => [t] -> [t]
+ssort [] = []
+ssort xs = let { x = minimum xs } 
+           in  x : ssort (delete x xs)
+```
+
+### References and Recommendations for Future Reading:
+- [Bubble sort, Mergesort, and other sorting algorithms](https://smthngsmwhr.wordpress.com/2012/11/09/sorting-algorithms-in-haskell/#quicksort)
+

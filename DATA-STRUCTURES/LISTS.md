@@ -22,19 +22,19 @@ Every element (x) is prepend  to the list (xs). For example....
 ^start           ^end
 ```
 
-# TUPLES
+## Tuples
 
 Tuples, unlike lists, don't have to be homogenuous. 
 They're usually in this form..
 
 ```
-(1,2):: (Int,Int)  --remember that they don't have to be homogenuous
+(1,2):: (Int,Int) 
 ```
 
 
-# LIST COMPREHENSION
+## List Comprehension
 
-Why is this legal in Haskell?
+Why is including different types legal in Haskell?
 
 ```
 [(x,y) | x<- [1,2,3],  y<-['a','b']]
@@ -44,3 +44,8 @@ Why is this legal in Haskell?
 
 Remember that tuples are not restricted to one data type. So we can create a list of tuples to have a collection of different data types. 
 
+#### Exercise: Try solving the exercises in LISTS-PRACTICES
+
+### References and Recommendations for Future Reading
+- [Lists - Haskell Documentation](https://wiki.haskell.org/Learn_Haskell_in_10_minutes)
+- [Working with Lists](https://wiki.haskell.org/How_to_work_on_lists)

@@ -32,14 +32,13 @@ pop (Queue xs) = (head xs, Queue $ tail xs)
 peek (Queue (x:xs)) = x
 ```
 
-However, this implementation is inefficent becayse we using the list concatentation operator (++), which takes time proportional to the length of the list. Therefore, the push operation would be in O(n) and not constant time. 
+However, this implementation is inefficent because we are using the list concatentation operator (++), which takes time proportional to the length of the list. Therefore, the push operation would be in O(n) and not constant time. 
+
+
+#### Exercise: Try to implement a Queue with a push operation that runs in constant time
 
 
 
-Will add an improved implementation....
-
-
-
-#### Reference
-
-https://rafal.io/posts/haskell-queues.html
+### Reccomendations for Future Reading:
+- [Data Structures in Haskell](https://en.wikibooks.org/wiki/Haskell/Other_data_structures)
+- [Real World Haskell - Data Structures](http://book.realworldhaskell.org/read/data-structures.html)
