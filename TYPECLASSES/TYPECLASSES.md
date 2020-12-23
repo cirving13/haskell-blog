@@ -1,9 +1,9 @@
-### Type Classes 
+### Typeclasses 
 
 ```
 (+) :: Num a => a->a->a
 ```
-a has to have an instance of the Num type. So a Typeclass defines some functions that need to be defined in a class and for a type to be in that type class is has to have an instance of such a class. 
+a has to have an instance of the Num type. So a typeclass defines some functions that need to be defined in a class and for a type to be in that type class is has to have an instance of such a class. 
 
 ```
 sum :: Num p => [p] -> p
@@ -24,7 +24,7 @@ abs ::a->a
 signum :: a->a
 fromInteger :: Integer -> a
 ```
-it gives us the information on the types that are defined in the Num type class. 
+it gives us the information on the types that are defined in the Num typeclass. 
 
 ```
 ghci> :info Show 
@@ -57,11 +57,11 @@ class Eq a => Ord a where
     min :: a->a->a
     {-# MINIMAL compare | (<=) #-}
 ```
-what `class Eq a=> Ord a` means is that numbers can be ordered can also be checked for equivalent. 
+what `class Eq a=> Ord a` means is that numbers can be ordered can also be checked for equivalence. 
 
 
 ##### Deriving Typeclasses
-Deriving typeclasses can be benficial if you want your data types to be printable, and if you don't want to write new instances of the show type classes. 
+Deriving typeclasses can be benficial if you want your data types to be printable, and if you don't want to write new instances of the show typeclasses. 
 
 ```
 data Temperature = C Float | F Float 
@@ -75,3 +75,11 @@ Dervied equivalence:
     (==) (F n) (F m) = n ==m 
     (==) _ _ = False
 ```
+
+
+### References and Recommendations for Future Reading:
+- [Typeclasses - Youtube](https://www.youtube.com/watch?v=1txgSlcpQmo&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=13)
+
+- [Typeclasses](http://learnyouahaskell.com/types-and-typeclasses)
+
+- [Typeclassse - Real World Haskell](http://book.realworldhaskell.org/read/using-typeclasses.html)
