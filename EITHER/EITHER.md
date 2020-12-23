@@ -8,7 +8,7 @@ Let's assume that we have some data that can be either an Int or a String. How w
 data SomeData = Left Int | Right String
 ```
 
-The above example that shows a data called 'SomeData', with a left constrtuctor that has SomeData as an Int and the right constructor as a String. This way is valid, but what if we want to do it in a polymorphoic way?
+The above example that shows a data called 'SomeData', with a left constructor that has SomeData as an Int and the right constructor as a String. This way is valid, but what if we want to do it in a polymorphoic way?
 
 ```
 data Either a b = Left a | Right b
@@ -16,7 +16,7 @@ data Either a b = Left a | Right b
 type SomeData = Either Int String 
 ```
 
-The data "Either"  has two type variables -- a and b. The "Left" is a and the "Right is b. So when we construct a type called "SomeData", for example, can defined as a type alias. 
+The data "Either"  has two type variables -- a and b. The "Left" is a and the "Right is b. So when we construct a type called "SomeData", for example, it's defined as a type alias. 
 
 It's worth to note that Haskell has a module called Data.Either. Let's go over some of the functions that the module provides. 
 
@@ -44,7 +44,7 @@ f (Left 1)
 f (Right "Hello")
 => "Hello"
 ```
-In this case, we have an either with Int and String, and takes its arguments (ignores it) and returns a String that's called Number--otherwise we return a value in that constructor. If we apply it to Left 1 we get "Number", and if we apply it to Right "Hello", we get "Hello". Next, let's look at partitionEithers.
+In this case, we have an either with Int and String, and takes in an argument (ignores it) and returns a String that's called Number--otherwise we return a value in that constructor. If we apply it to Left 1 we get "Number", and if we apply it to Right "Hello", we get "Hello". Next, let's look at partitionEithers.
 
 ```
 partitionEither :: [Either a b] -> ([a],[b])
@@ -54,7 +54,7 @@ partitionEither :: [Either a b] -> ([a],[b])
 ```
 PartitionEithers takes care of the case when you have a list of Either, you might want to separate the lefts from the rights. Look at the list I provided below the partitionEithers function, the example returns a list of the Left values and another list that contains the Right Values. So why even do this? 
 
-We can do error handinling with Either. Either works like Maybe but Nothiing holds it's own value! Let's look at the two definitions again...
+We can do error handinling with Either. Either works like Maybe but Nothing holds it's own value! Let's look at the two definitions again...
 
 ```
 data Either a b = Left a | Right b
