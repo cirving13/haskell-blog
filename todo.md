@@ -5,6 +5,7 @@
 - troubles in learning haskell
 - check all mds
 - finish each blog with list of references and recommendations for further reading;
+- check for layout in all mds 
 
 - arrows
 - concurrency and threads 
