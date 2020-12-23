@@ -1,0 +1,3 @@
+# Troubles I Had While Learning Haskell
+
+While learning Haskell, one of the most difficult parts in learning Haskell was understanding the syntax itself. So, if you're having the same issue, I would highly recommend reading through the documentation. I would say that another challenge while learning Haskell was getting use to writing without any for loops or while loops. So in this case, I would suggest trying some easy exercises in Haskell to get a better grasp of recursion, and get use to writing code without any for/while loops.
