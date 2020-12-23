@@ -1,4 +1,4 @@
-### Either
+# Either
 
 Before I provide the defintion of the Either keyword or give you specific examples with the Either keyword...let's assume this:
 
@@ -62,6 +62,6 @@ data Maybe a = Nothing | Just a
 ```
 At first glance they look that same, the main difference between the two is the Left holds it's own value. And the Nothing in the case of Maybe holds nothing. Nothing represents some error state, and Just represents some correct value. With Either, the same principle applies, where the Left value can represent the incorrect value, and the Right value can represent the correct value. With Either defined this way, you can keep the incorrect value which is something that you might want; whereas with the Maybe keyword you are not able to keep the wrong value. 
 
-## References
+### References and Recommendations Future Reading:
 - [Haskell Documentation](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html)
 - [Youtube](https://www.youtube.com/watch?v=IgdZX5wav1Q&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=22)

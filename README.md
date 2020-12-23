@@ -1,4 +1,4 @@
-## Welcome to my Haskell Tutorial blog
+## A Beginner's Guide to Haskell
 
 #### Table of Contents
 - Introduction

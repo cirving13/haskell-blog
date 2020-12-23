@@ -1,12 +1,10 @@
 - theory 
 - functional vs. procedural programming 
 - fix recursion exerecises.md
-- include ()[] for links
 - troubles in learning haskell
+
+
+- include ()[] for links
 - check all mds
 - finish each blog with list of references and recommendations for further reading;
 - check for layout in all mds 
-
-- arrows
-- concurrency and threads 
-- semaphores
