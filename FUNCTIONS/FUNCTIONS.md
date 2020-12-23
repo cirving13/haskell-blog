@@ -1,4 +1,4 @@
-# FUNCTIONS
+# Functions
 
 ### Higher Order Functions
 Higher-order functions are functions that take other functions as arguments or returns a function as a result. 
@@ -91,7 +91,7 @@ map (\(x,y) -> x+y) [(1,2),(2,3),(3,4)]
 
 ### Currying 
 
-Currying is the process of transforming a function that takes multiple arguments in a tuple as its argument, into a function that takes just a single argument and returns another function which accepts further arguments, one by one, that the original function would receive in teh rest of that tuple.
+Currying is the process of transforming a function that takes multiple arguments in a tuple as its argument, into a function that takes just a single argument and returns another function which accepts further arguments, one by one, that the original function would receive in the rest of that tuple.
 
 For example...
 ```
@@ -105,7 +105,7 @@ g::(a,b) -> c
 ### Function Composition
 Function composition is the act of pipelining the result of one function, to the input of another, creating an entirely new function.
 
-This is performed with any two functions, where the argument type of the first is the return type of the second. The newly created function takes what the second function would as a parameter and feeds it through the second funcction, then the result of the second function through the first function, and returns the result of the first function. In Haskell, the dot operator is used to compose function.
+This is performed with any two functions, where the argument type of the first is the return type of the second. The newly created function takes what the second function would as a parameter and feeds it through the second function, then the result of the second function through the first function, and returns the result of the first function. In Haskell, the dot operator is used to compose function.
 
 ```
 (.) :: (b->c) -> (a->b) -> a -> c
@@ -126,4 +126,10 @@ The example just presented is the equivalent to...
 \x -> reverse(sort x)
 ```
 
-
+### References and Recommendations for Future Reading:
+- [Functions](https://www.youtube.com/watch?v=pitjnqRKyyI&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=2)
+- [Higher-order functions](https://www.youtube.com/watch?v=ccExc6rrUN8&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=6)
+- [Partial function application and currying](https://www.youtube.com/watch?v=m12c99qgHBU&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=7)
+- [Function Composition](https://www.youtube.com/watch?v=dR_aUQXw5fs&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=8)
+- [Functions - Haskell Docs](https://wiki.haskell.org/Function)
+- [Functions - Lambda Abstractions](https://www.haskell.org/tutorial/functions.html)

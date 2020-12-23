@@ -2,7 +2,7 @@
 
 ### Quicksort
 
-So before we implement the Quicksort algorithm in Haskell, let's review on what the algorithm itself is. Quicksort is essentially a divide-and-conquer algorithm, which selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.  
+So before we implement the Quicksort algorithm in Haskell, let's review what the algorithm itself is. Quicksort is essentially a divide-and-conquer algorithm, which selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater pivot.  
 
 For a clearer undestanding click here: [Quicksort](https://www.geeksforgeeks.org/quick-sort/)
 
@@ -19,7 +19,7 @@ quicksort1 (x:xs) =
 
 then in ghci you run the function like this: `quicksort1 [1,5,2]`
 
-So the code above we are taking the first element as our pivot, divide the remaining list into the elements greater than the pivot and less than the pivot. Then we recursively sort each of these sub-list, and combine them with the pivot in the middle. The pitfall with this version of quicksort is in each new list we make takes extra memory. Meaning that we copy part of the list at each recursive step, or in other words, we will use at least O(n) memory. By the way, it's important to know that this version uses the first elementas the pivot. 
+So in the code above, we are taking the first element as our pivot. Then, arranging the remaining list into the elements greater than the pivot and less than the pivot. Then we recursively sort each of the sub-lists and combine them with the pivot in the middle. The pitfall with this version of quicksort is in each new list; we make extra memory. Meaning that we copy part of the list at each recursive step, or in other words, we will use at least O(n) memory. By the way, it's essential to know that this version uses the first element as the pivot. 
 
 
 ### Mergesort 
@@ -52,7 +52,7 @@ mergesort xs
 
 ```
 
-In the mergesort'splitinhalf function we split a list into two parts, thus returning a pair of array into which the original array was split. `n` is equal to the half of the length of the array, and then we use the standard functions `take` and `drop` to get the first `n` elements of the list  `take n xs` and the rest of the list after those first elements `drop n xs`.
+In the "mergesort'splitinhalf" function we split a list into two parts, thus returning a pair of arrays into which the original array was split. The variable `n` is equal to the half of the length of the array, and then we use the standard functions `take` and `drop` to get the first `n` elements of the list  `take n xs` and the rest of the list after those first elements `drop n xs`.
 
 
 So the mergesort'merge function receives two arrays and produces one array of the same type. The algorithm for merge the two subarrays is as follows:
@@ -60,9 +60,6 @@ So the mergesort'merge function receives two arrays and produces one array of th
 - if the first list is empty [] then the result of the merge is the second list xs
 - if the second list is empty [] then the result of the merge is the first list xs
 - otherwise we compare the first elements of the lists and append with the colon (:) function the least of them to the new list which is the result of merge the remaining two lists
-
-
-Now let's go over to our mergesort function. If the length of the list is greater than 1 then we do the standard step of the algorithm. Otherwise the list with the length of 1 is already  sorted (the condition for ending the recursion). 
 
 
 ### Bubble Sort

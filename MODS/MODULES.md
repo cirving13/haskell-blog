@@ -1,4 +1,4 @@
-# Modules 
+# Using Modules in Haskell
 
 #### What is a module? Why us them?
 

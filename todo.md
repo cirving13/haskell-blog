@@ -1,5 +1,4 @@
 - theory 
-- functional vs. procedural programming 
 - fix recursion exerecises.md
 - troubles in learning haskell
 

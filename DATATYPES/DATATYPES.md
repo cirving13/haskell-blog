@@ -67,5 +67,5 @@ newtype Name = Name String
 ```
 Why is this helpful? Why not using data?
 
-Because its constructor clearly signifies a new type! But, data can do the same? The new type and the type of the field are in direct corrospondence (isomorphic). And, new type is checked at compile time, yet ignored at runtime; thus, no work done when pattern matching)! 
+Because its constructor clearly signifies a newtype! But, data can do the same? The newtype and the type of the field are in direct corrospondence (isomorphic). And, newtype is checked at compile time, yet ignored at runtime; thus, no work done when pattern matching)! 
 

@@ -1,4 +1,4 @@
-#### IO 
+# IO 
 
 So in this blog we're finally going to write Hello World! And you can do this with the following line of code...
 
@@ -68,3 +68,10 @@ count n m = do
     else
         return ()
 ```
+
+
+### References and Recommendations for Future Reading:
+- [IO- Youtube](https://www.youtube.com/watch?v=fP0srOQVGB8&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV&index=15)
+- [Intro to IO](https://wiki.haskell.org/Introduction_to_IO)
+- [Intro to Haskell IO](https://wiki.haskell.org/Introduction_to_Haskell_IO)
+- [Intro to Haskell IO/Actions](https://wiki.haskell.org/Introduction_to_Haskell_IO/Actions)
