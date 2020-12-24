@@ -13,3 +13,6 @@ Another undecidable problem includes Fermat's Theorem.
 Combinatory logic is a model by which logical statements can be described as a combination of a small number of primitive elements called combinators. Each combinator is like a function or lambda abstraction, but without any free variables. It's Turing complete because Combinatory logic can capture the meaning of any arithmetic or logical statement.
 
 
+### References: 
+- [Other Undecidable Problems](https://www.cs.wcupa.edu/rkline/fcs/other-undecidable.html)
+- [Halting Problem](https://en.wikipedia.org/wiki/Halting_problem)
